@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="TEST_UXCROWD_RU" verbose="1">
+    <groups>
+        <run>
+            <include name="B1"/>
+        </run>
+    </groups>
+    <listeners>
+        <listener class-name="ru.performance.tests.tools.ScreenShotOnFailListener"/>
+        <listener class-name="ru.performance.tests.tools.CustomReport"/>
+    </listeners>
+
+    <test name="RequisitesTest">
+
+        <classes>
+            <class name="ru.performance.tests.suites.Requisites.Requisites"/>
+        </classes>
+    </test>
+
+</suite>
